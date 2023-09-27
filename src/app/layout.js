@@ -1,3 +1,4 @@
+import Providers from "./Providers";
 import Header from "./components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -13,9 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {" "}
-        <Header />
-        {children}
+        <Providers>
+          {" "}
+          {/* Even the Providers is client side,Header and children are still server side components::Kudos to Next.js 13 */}
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
