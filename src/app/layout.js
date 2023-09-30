@@ -1,5 +1,6 @@
 import Providers from "./Providers";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           {" "}
           {/* Even the Providers is client side,Header and children are still server side components::Kudos to Next.js 13 */}
           <Header />
+          <Navbar />
           {children}
         </Providers>
       </body>

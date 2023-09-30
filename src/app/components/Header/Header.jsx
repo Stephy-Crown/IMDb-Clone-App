@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";
-import DarkModeSwitch from "./DarkModeSwitch";
+import DarkModeSwitch from "../DarkModeSwitch";
 export default function Header() {
   return (
     <header className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6">
