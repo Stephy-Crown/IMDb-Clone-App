@@ -11,10 +11,10 @@ export default function Card({ result }) {
           src={`https://image.tmdb.org/t/p/original/${
             result.backdrop_path || result.poster_path
           }`}
-          width={500}
+          width={300}
           height={300}
           className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
-          style={{ maxWidth: "100%", height: "auto" }}
+          style={{ maxWidth: "100%", height: "300px", width: "500px" }}
           placeholder="blur"
           blurDataURL="/spinner2.svg"
           alt="image is not available"
