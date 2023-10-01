@@ -9,9 +9,9 @@ export default async function SearchPage({ params }) {
   if (!res.ok) {
     throw new Error("Error fetching data");
   }
-  // const { results } = await res.json();
-  const data = await res.json();
-  const results = data.results;
+  const { results } = await res.json();
+  // const data = await res.json();
+  // const results = data.results;
   return (
     <div>
       {results && results.length === 0 && (
